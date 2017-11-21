@@ -32,5 +32,6 @@ RUN git checkout -b devel origin/devel && ./bootstrap
 RUN ./contract.py --configure hdf5_internal=0 || /bin/true
 RUN ./contract.py --configure eigen3_internal=0 || /bin/true
 RUN ./contract.py fftw3 || /bin/true
+RUN ./contract.py chef-libs || /bin/true
 RUN ./contract.py || /bin/true
 
